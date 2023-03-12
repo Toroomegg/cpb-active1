@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>SoltGame</title>
+  <title>SlotGame</title>
   <style>
     * {
       padding: 0;
@@ -72,7 +72,7 @@
       codeUrl: buildUrl + "/SlotGame.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
-      productName: "SoltGame",
+      productName: "SlotGame",
       productVersion: "1.0",
       devicePixelRatio: pixelRatio
     };
@@ -87,9 +87,8 @@
       createUnityInstance(canvas, config, function(progress) {
         progressBar.style.width = 100 * progress + "%";
       }).then(function(unityInstance) {
-          window.unityInstance = unityInstance;
+        window.unityInstance = unityInstance;
         this.firebase = firebase;
-        
         loadingBar.style.display = "none";
       }).catch(function(message) {
         alert(message);
@@ -98,8 +97,8 @@
     document.body.appendChild(script);
   </script>
     
-     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     <script>
       // Your web app's Firebase configuration
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
