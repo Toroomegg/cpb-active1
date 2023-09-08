@@ -87,15 +87,13 @@
       createUnityInstance(canvas, config, function(progress) {
         progressBar.style.width = 100 * progress + "%";
       }).then(function(unityInstance) {
-        window.unityInstance = unityInstance;
-        this.firebase = firebase;
         loadingBar.style.display = "none";
       }).catch(function(message) {
         alert(message);
       });
     };
     document.body.appendChild(script);
-  </script>
+    </script>
     
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
