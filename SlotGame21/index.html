@@ -18,21 +18,27 @@
     }
 
     #unity-canvas {
+      background: url(https://cpb-active.com/webloadingbg.png);
       position: absolute;
       left: 0px;
       top: 0px;
       width: 100%;
       height: 100%;
+
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
     }
 
     #unity-loading-bar {
       position: absolute;
       left: 30%;
-      top: 50%;
+      top: 60%;
       width: 40%;
       height: 10px;
-      background-color: #fff;
-      border: 1px solid #ccc;
+      background-color:#173064;
+      border: 1px solid #f9f0c8;
       border-radius: 10px;
     }
 
@@ -42,7 +48,7 @@
       top: 0%;
       width: 1%;
       height: 100%;
-      background-color: #ccc;
+      background-color: #f9f0c8;
       border-radius: 10px;
       transition: 400ms linear;
     }
@@ -67,9 +73,9 @@
     var buildUrl = "Build";
     var loaderUrl = buildUrl + "/SlotGame.loader.js";
     var config = {
-      dataUrl: buildUrl + "/SlotGame.data.unityweb",
-      frameworkUrl: buildUrl + "/SlotGame.framework.js.unityweb",
-      codeUrl: buildUrl + "/SlotGame.wasm.unityweb",
+      dataUrl: buildUrl + "/SlotGame.data",
+      frameworkUrl: buildUrl + "/SlotGame.framework.js",
+      codeUrl: buildUrl + "/SlotGame.wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "SlotGame",
